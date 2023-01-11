@@ -80,7 +80,7 @@ resource hostingPlan 'Microsoft.Web/serverfarms@2020-06-01' = {
 }
 
 resource site 'Microsoft.Web/sites@2021-02-01' = {
-  name: siteName
+  name: websiteName
   location: location
   identity: {
     type: 'SystemAssigned'
