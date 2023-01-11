@@ -21,4 +21,4 @@ steps:
     scriptLocation: inlineScript
     inlineScript: |
       az deployment group create --resource-group $(resourceGroupName) --template-file $(sourceFolder)$(templateFile) \
-      --parameters administratorLogin=$(administratorLogin) administratorLoginPassword=$(administratorLoginPassword) websiteName=$(websiteName)
+      --parameters administratorLogin=$(administratorLogin) administratorLoginPassword=$(administratorLoginPassword) siteName=$(siteName)
