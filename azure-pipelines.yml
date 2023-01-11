@@ -20,5 +20,5 @@ steps:
     scriptType: Shell
     scriptLocation: inlineScript
     inlineScript: |
-      az deployment group create --resource-group $(resourceGroupName) --template-file 'quickstarts/microsoft.web/webapp-linux-managed-mysql/main.bicep' \
+      az deployment group create --resource-group $(resourceGroupName) --template-file $(sourceFolder)$(templateFile) \
       --parameters administratorLogin=$(administratorLogin) administratorLoginPassword=$(administratorLoginPassword)
